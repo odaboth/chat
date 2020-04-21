@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height">
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    body {
+      background: gray;
+    }
+    .vidLocal {
+      background: rgba(0, 0, 0, 0.0);
+      left: 0px;
+      top: 0px;
+      position: fixed;
+      width: 15%;
+      height: auto;
+      margin: 10px;
+      z-index: 1;
+    }
+    .vidRemote {
+      background: black;
+      position: fixed;
+      min-width: 100%;
+      min-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <video id="localVideo" class="vidLocal" autoplay muted></video>
+  <video id="remoteVideo" class="vidRemote" autoplay></video>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
